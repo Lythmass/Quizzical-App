@@ -1,4 +1,5 @@
 import React from "react"
+import { nanoid } from "nanoid"
 
 export default function Quiz(props) {
 
@@ -6,16 +7,21 @@ export default function Quiz(props) {
      const answers = [...props.incorrect, props.correct];
      [answers[random], answers[3]] = [answers[3], answers[random]];
      const displayAnswers = answers.map(answer => {
-
+          const id = nanoid();
           return (
-               <button>{answer}</button>
+               <div className = "quiz-buttons">
+                    <input type = "radio" name = {props.id} id = {id}/>
+                    <label for = {id}>
+                         <p className = "answer">{answer}</p>
+                    </label>
+               </div>
           )
      });
 
-     
+
      return (
-          <div className = "question">
-               <h1>{props.question}</h1>
+          <div>
+               <h2>{props.question}</h2>
                <div className = "answers">
                     {displayAnswers}
                </div>

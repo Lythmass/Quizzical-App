@@ -31,6 +31,7 @@ export default function App() {
           return (
                <Quiz
                     key = {data.id}
+                    id = {data.id}
                     question = {data.question}
                     correct = {data.correct_answer}
                     incorrect = {data.incorrect_answers}
@@ -42,7 +43,12 @@ export default function App() {
           <div className = "App" >
                {
                     page == "welcome" ? <Welcome cp = {changePage} />
-                    : eachQuizQuestion
+                    : <div className = "question-body">
+                         <div className = "question">
+                              {eachQuizQuestion}
+                              <button className = "check-answers">Check Answers</button>
+                         </div>
+                      </div>
                }
           </div>
      );

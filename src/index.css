@@ -2,6 +2,8 @@
      margin: 0;
      padding: 0;
      font-family: 'Karla', sans-serif;
+     border: none;
+     box-sizing: border-box;
 }
 
 /* Welcome Section */
@@ -14,6 +16,7 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
+     text-align: center;
 }
 
 .welcome > h1 {
@@ -46,3 +49,103 @@
      transform: scaleX(0.9) scaleY(0.9);
 }
 /* End of Welcome Section */
+
+/* Quiz Section */
+.question-body {
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-image: linear-gradient(45deg, transparent 90%, #FF2E63 90%),
+     linear-gradient(45deg, #08D9D6 10%, #E4F9F5 10%);
+}
+
+.question {
+     display: flex;
+     gap: 3rem;
+     flex-direction: column;
+     max-width: 70%;
+
+}
+
+.answer {
+     margin: 0.75rem 5rem 1rem 0;
+     font-size: 1.25rem;
+     padding: 0.5rem 1.5rem;
+     border-radius: 10px;
+     border: 1px solid #08D9D6;
+     cursor: pointer;
+     box-shadow: 3px 2px #08D9D6;
+     transition: 0.125s ease;
+
+}
+
+.answer:hover {
+     box-shadow: 0 0;
+     transform: translateX(3px) translateY(2px);
+}
+
+input:checked ~ label .answer {
+     box-shadow: 0 0;
+     transform: translateX(3px) translateY(2px);
+     background-color: hsl(179.1, 92.9%, 44.1%, 0.5);
+}
+
+.quiz-buttons {
+     display: inline-block;
+}
+
+input {
+     display: none;
+}
+
+.check-answers {
+     background-color: #FF2E63;
+     padding: 1rem 2.5rem;
+     align-self: center;
+     border-radius: 10px;
+     text-align: center;
+     color: white;
+     font-size: 1.2rem;
+     cursor: pointer;
+     transition: 0.125s ease;
+}
+.check-answers:hover {
+     transform: scaleX(1.1) scaleY(1.1);
+}
+
+.check-answers:active {
+     transform: scaleX(0.9) scaleY(0.9);
+}
+
+@media (max-width: 1415px) {
+     .question {
+          margin-top: 5rem;
+     }
+     .check-answers {
+          margin-bottom: 3.25rem;
+     }
+}
+
+@media (max-width: 1000px) {
+     .question-body {
+          background-image: linear-gradient(45deg, transparent 95%, #FF2E63 95%),
+          linear-gradient(45deg, #08D9D6 5%, #E4F9F5 5%);
+     }
+     h2 {
+          font-size: 1.2rem;
+          word-wrap: break-word;
+          word-break:normal;
+          width: 85%;
+     }
+     .quiz-buttons {
+          display: flex;
+          flex-direction: column;
+          margin: 0;
+     }
+     .answer {
+          margin-left: 0;
+          margin-right: 0;
+     }
+}
