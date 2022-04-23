@@ -69,6 +69,7 @@
 
 }
 
+/* Answers */
 .answer {
      margin: 0.75rem 5rem 1rem 0;
      font-size: 1.25rem;
@@ -78,7 +79,23 @@
      cursor: pointer;
      box-shadow: 3px 2px #08D9D6;
      transition: 0.125s ease;
+}
+.answer-correct {
+     margin: 0.75rem 5rem 1rem 0;
+     font-size: 1.25rem;
+     padding: 0.5rem 1.5rem;
+     border-radius: 10px;
+     border: 1px solid #6BCB77;
+     background-color: hsl(127.5, 48%, 60.8%, 0.5)
+}
 
+.answer-incorrect {
+     margin: 0.75rem 5rem 1rem 0;
+     font-size: 1.25rem;
+     padding: 0.5rem 1.5rem;
+     border-radius: 10px;
+     border: 1px solid #E84545;
+     background-color: hsl(0, 78%, 59%, 0.5);
 }
 
 .answer:hover {
@@ -109,7 +126,15 @@ input {
      color: white;
      font-size: 1.2rem;
      cursor: pointer;
+     justify-content: center;
      transition: 0.125s ease;
+}
+
+.button-parent {
+     display: flex;
+     width: 100%;
+     justify-content: center;
+     margin-top: 3rem;
 }
 .check-answers:hover {
      transform: scaleX(1.1) scaleY(1.1);

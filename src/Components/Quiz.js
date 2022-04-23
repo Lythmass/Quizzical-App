@@ -1,30 +1,38 @@
 import React from "react"
+import Buttons from "./Buttons.js"
 import { nanoid } from "nanoid"
 
 export default function Quiz(props) {
 
-     const random = Math.floor(Math.random() * 4);
-     const answers = [...props.incorrect, props.correct];
-     [answers[random], answers[3]] = [answers[3], answers[random]];
-     const displayAnswers = answers.map(answer => {
-          const id = nanoid();
+     const [showAnswers, setShowAnswers] = React.useState(false);
+     const all = props.all.map(single => {
           return (
-               <div className = "quiz-buttons">
-                    <input type = "radio" name = {props.id} id = {id}/>
-                    <label for = {id}>
-                         <p className = "answer">{answer}</p>
-                    </label>
+               <div>
+                    <h2 dangerouslySetInnerHTML = {{__html: single.question}}/>
+                    <div className = "answers">
+                         <Buttons
+                              key = {nanoid()}
+                              name = {single.id}
+                              value = {single.answer}
+                              show = {showAnswers}
+                              correct = {single.correct}
+                         />
+                    </div>
                </div>
           )
      });
-
-
      return (
           <div>
-               <h2>{props.question}</h2>
-               <div className = "answers">
-                    {displayAnswers}
+               {all}
+               <div className = "button-parent">
+                    <button
+                         className = "check-answers"
+                         onClick = {() => setShowAnswers(true)}
+                    >
+                         Check Answers
+                    </button>
                </div>
           </div>
      )
+
 }
