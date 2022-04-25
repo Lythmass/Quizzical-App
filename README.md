@@ -1,70 +1,46 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Quizzical App
 
-## Available Scripts
+Scrimba's final challenge.
+A simple quiz project built with React.js, where you get random questions and answers through Opentdb API.
 
-In the project directory, you can run:
 
-### `npm start`
+## What did I learn?
+After completing this  challenge I learned that React is not easy, but gained some essential skills and knowledge for my next projects. Now I know how to use props, states, components and effects in more optimal way.
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Random and distinct questions
+- Displaying correct and incorrect (if chosen) answers
+- Responsive Design
+- Correct guesses counter
+- Restart function
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Color Reference
 
-### `npm test`
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Answer Button | ![#08D9D6](https://via.placeholder.com/10/08D9D6?text=+) #08D9D6 |
+| Submit Button | ![#FF2E63](https://via.placeholder.com/10/FF2E63?text=+) #FF2E63 |
+| Incorrect Answer | ![#E84545](https://via.placeholder.com/10/E84545?text=+) #E84545 |
+| Correct Answer | ![#6BCB77](https://via.placeholder.com/10/6BCB77?text=+) #6BCB77 |
+| Background Color | ![#E4F9F5](https://via.placeholder.com/10/E4F9F5?text=+) #E4F9F5 |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Acknowledgements
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+ - [Scrimba's free React Course](https://scrimba.com/learn/learnreact)
+ - [Awesome README](https://github.com/matiassingers/awesome-readme)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚀 About Me
+I'm a CS Student, currently learning JavaScript/React
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Feedback
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+If you have any feedback, please reach out to me at lythmass17@gmail.com
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Author
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[@Lythmass](https://github.com/Lythmass)
