@@ -51,7 +51,7 @@
 /* End of Welcome Section */
 
 /* Quiz Section */
-.question-body {
+.quiz-body {
      width: 100%;
      min-height: 100vh;
      display: flex;
@@ -61,7 +61,7 @@
      linear-gradient(45deg, #08D9D6 10%, #E4F9F5 10%);
 }
 
-.question {
+.quiz {
      display: flex;
      gap: 3rem;
      flex-direction: column;
@@ -70,6 +70,10 @@
 }
 
 /* Answers */
+.qa {
+     margin: 2rem 0;
+}
+
 .answer {
      margin: 0.75rem 5rem 1rem 0;
      font-size: 1.25rem;
@@ -135,7 +139,10 @@ input {
      width: 100%;
      justify-content: center;
      margin-top: 3rem;
+     align-items: center;
+     gap: 2rem;
 }
+
 .check-answers:hover {
      transform: scaleX(1.1) scaleY(1.1);
 }
@@ -145,7 +152,7 @@ input {
 }
 
 @media (max-width: 1415px) {
-     .question {
+     .quiz {
           margin-top: 5rem;
      }
      .check-answers {
@@ -154,7 +161,7 @@ input {
 }
 
 @media (max-width: 1000px) {
-     .question-body {
+     .quiz-body {
           background-image: linear-gradient(45deg, transparent 95%, #FF2E63 95%),
           linear-gradient(45deg, #08D9D6 5%, #E4F9F5 5%);
      }
