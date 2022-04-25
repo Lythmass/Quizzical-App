@@ -3,7 +3,7 @@
 
 Scrimba's final challenge.
 A simple quiz project built with React.js, where you get random questions and answers through Opentdb API.
-
+Link to the hosted project: https://lythmass.github.io/Quizzical-App/
 
 ## What did I learn?
 After completing this  challenge I learned that React is not easy, but gained some essential skills and knowledge for my next projects. Now I know how to use props, states, components and effects in more optimal way.
