@@ -4,11 +4,12 @@ import Welcome from "./Components/Welcome.js"
 import Quiz from "./Components/Quiz.js"
 
 export default function App() {
+
      window.localStorage.clear();
+
      const [quiz, restartQuiz] = React.useState(false);
      const [page, setPage] = React.useState("welcome");
      const [quizData, setQuizData] = React.useState([]);
-     const [loading, setLoading] = React.useState(false);
 
      function restart() {
           setQuizData([]);
@@ -26,6 +27,7 @@ export default function App() {
      }, [quiz]);
 
      const eachQuizQuestion = quizData.map(data => {
+          //These 3 lines of code randomize the order of the answers array
           const random = Math.floor(Math.random() * 4);
           const answers = [...data.incorrect_answers, data.correct_answer];
           [answers[random], answers[3]] = [answers[3], answers[random]];
@@ -46,7 +48,7 @@ export default function App() {
                          <div className = "quiz">
                               <Quiz
                                    key = {nanoid()}
-                                   all = {eachQuizQuestion}
+                                   allQuestions = {eachQuizQuestion}
                                    restart = {restart}
                               />
                          </div>

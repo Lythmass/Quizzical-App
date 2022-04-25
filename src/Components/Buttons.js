@@ -4,10 +4,14 @@ import { nanoid } from "nanoid"
 export default function Buttons(props) {
 
      function saveValue(event) {
+          //Save the chosen answer
           window.localStorage.setItem(props.name, event.target.value);
+
           if(event.target.value == props.correct) {
+               //If the chosen answer is correct, save the number 1
                window.localStorage.setItem(props.correct, 1);
           } else {
+               //If the chosen answer is incorrect, save the number 0
                window.localStorage.setItem(props.correct, 0);
           }
      }
